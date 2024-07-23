@@ -30,7 +30,7 @@ export const Step2 = ({ handleNext, handleBack, loginData, handleChange }: Props
                         <Grid item xs={12} md={7}>
                             <Typography variant="body2">Enter a account to create your account with</Typography>
                             <Stack spacing={2} direction={'column'} justifyContent='end' alignItems={'end'} sx={{ mt: 2 }}>
-                                <TextField fullWidth value={loginData?.password} onChange={handleChange} type="password" name="password" label="Password" />
+                                <TextField fullWidth value={loginData?.password} onChange={handleChange} type="password" name="password" label="Password" InputProps={{ endAdornment: (<img src={'/assets/icons/eye-off.png'} alt={"Hide"} style={{ width: '20px' }} />) }} />
                                 <Grid container rowSpacing={1}>
                                     <Grid item xs={6} md={8}>
                                         <Typography variant="body2">{`Use a minimum of 6 characters (case sensitive) with at least one number or special character.`} </Typography>
